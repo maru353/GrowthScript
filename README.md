@@ -11,13 +11,13 @@
  - react-scripts@5.0.1　Reactアプリケーションの開発とビルドを行うためのスクリプト集
  - react@18.3.1　Reactライブラリ自体のバージョン
 ##バックエンド
-- rails
- - 
+- ruby
+ - version 3.2.3
 - フレームワーク rails
- - 
+ - version 7.1.3.2
 ##データベース
 - PostgreSQL version 16.2
 ##サーバーはローカル
 ##CI/CDはGitHub Actions
-##Docker
+##Docker　version 26.0.0
 ##アプリ名はGrowthScript
