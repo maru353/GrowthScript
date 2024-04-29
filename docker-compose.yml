@@ -1,20 +1,25 @@
-version: '3'
+version: '3.8'
+
 services:
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - '3000:3000'
+    depends_on:
+      - backend
+
   backend:
     build: ./backend
     ports:
-      - "3001:3001"
+      - '3001:3001'
     depends_on:
-      - db
-  db:
+      - database
+
+  database:
     image: postgres:16.2
     ports:
-      - "5432:5432"
+      - '5432:5432'
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-
+      POSTGRES_DB: growth_script_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
